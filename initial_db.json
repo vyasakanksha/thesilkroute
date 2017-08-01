@@ -1,0 +1,23 @@
+{
+    "ingredients": {
+        "-K2ib4H77rj0LYewF7dP": {
+            "name": "Guava",
+            "type": "Citrusy",
+            "tags": ["tropical", "indian", "mexican"]
+        },
+        "-K2ib62mjHh34CAUbide": {
+            "name": "Black Salt",
+            "type": "Brine & Salt",
+            "tags": ["Himalayan"]
+        }
+    },
+    
+    "recipes": {
+        "-K2ib5JHRbbL0NrztUfO": {
+            "name": "Street Guavas",
+            "ingredients": ["Guava", "Black Salt"],
+            "cuisine": "Indian",
+            "author": "Akanksha"
+        }
+    }
+}
