@@ -1,0 +1,8 @@
+{
+  "name": "The Great Eastern Flavour Theserous",
+  "short_name": "Flavour Theserous",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "gcm_sender_id": "103953800507"
+}
