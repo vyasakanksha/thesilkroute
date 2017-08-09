@@ -2,18 +2,21 @@
 
 
 var saveData = function(db, props) {
-    ref = database.ref(db);
+    // Get a reference to the database service
+    var database = firebase.database();
+    var ref = database.ref(db);
     ref.push(props);
 }
 
 var getData = function(db, id) {
-    ref = database.ref(db);
+    var database = firebase.database();
+    var ref = database.ref(db);
     return ref.getById(id)
 }
 
 // Initializes FriendlyChat.
 function FlavourTheserous() {
-  this.checkSetup();
+  //this.checkSetup();
 
   // Shortcuts to DOM Elements.
   this.ingredientList = document.getElementById('messages');
@@ -55,14 +58,12 @@ FlavourTheserous.prototype.initFirebase = function() {
       
     firebase.initializeApp(config);
 
-    // Get a reference to the database service
-    var database = firebase.database();
 
     var tags = ["Meaty", "Roasted", "Floral Fruit", "Berry and Bush", "Citrusy", "Creamy Fruity", "Fresh Fruity", "Woodland", "Spicy", "Green and Grassy", "Brine and Salt", "Marine", "Sulfurous", "Musterdy", "Earthy", "Cheesy"];
     
-    for (x in tags) {
+    for (var x in tags) {
         console.log(x);
-        savedata("tags", x);
+        saveData("tags", x);
     }
 }
 
